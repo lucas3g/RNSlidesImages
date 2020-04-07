@@ -23,7 +23,7 @@ export const Header = styled.View`
 export const THeader = styled.Text`
   font-weight: bold;
   font-size: 28px;
-  color: rgba(0, 0, 0, 0.9);
+  color: tomato;
   margin-top: 80px;
 `;
 
@@ -75,10 +75,13 @@ export const ContainerFace = styled.View`
   width: 260px;
 `;
 
-export const FacePhoto = styled.Image`
+export const ButtonDelete = styled(RectButton)`
   width: 100%;
   height: 100%;
   border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  background: #f10;
 `;
 
 export const ImageList = styled.Image`
@@ -95,10 +98,9 @@ export const FlatListImage = styled.FlatList.attrs({
 `;
 
 export const ContainerImageList = styled.View`
-  width: 15%;
-  height: 25%;
+  width: 12%;
+  height: 20%;
   border-radius: 50px;
   justify-content: center;
   align-items: center;
-  background: #fff;
 `;

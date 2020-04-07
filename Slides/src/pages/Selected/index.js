@@ -30,7 +30,7 @@ export default function Selected({ route }) {
   return (
     <Container>
       <ImageSelected
-        source={item.url}
+        source={{ uri: item.url }}
         style={{
           height: scrollOffset.interpolate({
             inputRange: [0, 200],
@@ -46,8 +46,8 @@ export default function Selected({ route }) {
       <ContainerTitle
         style={{
           height: scrollOffset.interpolate({
-            inputRange: [0, 250],
-            outputRange: [400, 150],
+            inputRange: [0, 300],
+            outputRange: [400, 100],
             extrapolate: 'clamp',
           }),
         }}>

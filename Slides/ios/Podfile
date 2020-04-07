@@ -54,6 +54,10 @@ target 'Slides' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
+  pod 'RNFileViewer', :path => '../node_modules/react-native-file-viewer'
+
+  pod 'react-native-document-picker', :path => '../node_modules/react-native-document-picker'
+
   target 'SlidesTests' do
     inherit! :complete
     # Pods for testing
